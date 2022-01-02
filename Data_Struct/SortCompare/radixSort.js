@@ -53,10 +53,7 @@ function radixSort (inputarr){
         }
         d--;
         n = n * 10 ;
-        console.log("output of each iteration");
-        console.log(b); 
     }
-    console.log("final output");
     console.log(b); 
     //return b ;
     }
