@@ -2,10 +2,36 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="sort.js"></script>
+        <script src="countingSort.js"></script>
+        <script src="radixSort.js"></script>
+        <script src="quickSort.js"></script>
         <title>SortCompare</title>
     </head>
     <body>
         <h1>Welcome to SortCompare</h1>
+        
+        <script>
+            let a = [9,6,4,5,65,15,0,3,10];
+            console.log(a);
+            quickSort(a);
+        </script>
+        <form>
+        <select id="firstAlgo">
+            <option value="insertion">Insertion Sort</option>
+            <option value="selection">Selection Sort</option>
+            <option value="bubble">Bubble Sort</option>
+            <option value="merge">Merge Sort</option>
+            <option value="heap">Heap Sort</option>
+            <option value="counting">Counting Sort</option>
+            <option value="radix">Radix Sort</option>
+            <option value="quick">Quick Sort</option>
+        </select>
+        
+    </form>
+        <div>
+            <canvas id="myChart"></canvas>
+          </div>
     </body>
 </html>
