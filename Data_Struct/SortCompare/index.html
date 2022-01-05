@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structures & Algorithms Project</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+   
+</head>
+<body>
+
+    <div id="body">
+        <div id="upper">
+            <h1>ALGORITHMS COMPLEXITY VISUALIZER</h1>
+        </div>
+        <div id="mid">
+            <select id="firstAlgo">
+                <option value="none">Select First Algorithm</option>
+                <option value="insertion">Insertion Sort</option>
+                <option value="selection">Selection Sort</option>
+                <option value="bubble">Bubble Sort</option>
+                <option value="merge">Merge Sort</option>
+                <option value="heap">Heap Sort</option>
+                <option value="counting">Counting Sort</option>
+                <option value="radix">Radix Sort</option>
+                <option value="quick">Quick Sort</option>
+
+            </select>
+
+            <select id="secondAlgo">
+                <option value="none">Select Second Algorithm</option>
+                <option value="insertion">Insertion Sort</option>
+                <option value="selection">Selection Sort</option>
+                <option value="bubble">Bubble Sort</option>
+                <option value="merge">Merge Sort</option>
+                <option value="heap">Heap Sort</option>
+                <option value="counting">Counting Sort</option>
+                <option value="radix">Radix Sort</option>
+                <option value="quick">Quick Sort</option>
+
+            </select>
+
+        <button onclick="main()">Analyze</button>
+
+
+        </div>
+        <div id="lower"><canvas id="myChart" width="500px" height="500px"></canvas></div>
+    </div>
+
+
+    
+    
+    
+    
+
+
+
+
+
+
+    <script src="counting.js"></script>
+    <script src="heap.js"></script>
+    <script src="insertion.js"></script>
+    <script src="merge.js"></script>
+    <script src="quick.js"></script>
+    <script src="radix.js"></script>
+    <script src="selection.js"></script>
+    <script src="bubble.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
