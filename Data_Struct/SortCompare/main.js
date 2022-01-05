@@ -1,8 +1,11 @@
 
 document.addEventListener('DOMContentLoaded',()=>{
+    document.querySelector('#analyze'),onclick = main();
         
     let counter=0;
     let myChart=null;
+
+});
     function main(){
         const sizes = [
             1000,
@@ -55,7 +58,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 
     }
-});
+
 
 //excuting graphs
 
