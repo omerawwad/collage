@@ -5,9 +5,11 @@
 
 [page preview](https://omerawwad.github.io/collage/Data_Struct/SortCompare/index.html)
 
-Project credits :
+`Project credits :
+
 -Mohammed Nassef
--Omer Ashraf
+
+-Omer Ashraf`
 
 ***
 
