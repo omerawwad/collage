@@ -1,64 +1,57 @@
+let counter=0;
+let myChart=null;
+function main(){
+    const sizes = [
+        1000,
+        2000,
+        3000,
+        4000,
+        5000,
+        6000,
+        7000,
+        8000,
+        9000,
+        10000
+      ];
 
-document.addEventListener('DOMContentLoaded',()=>{
-    document.querySelector('#analyze'),onclick = main();
-        
-    let counter=0;
-    let myChart=null;
+      // data of steps 
 
-});
-    function main(){
-        const sizes = [
-            1000,
-            2000,
-            3000,
-            4000,
-            5000,
-            6000,
-            7000,
-            8000,
-            9000,
-            10000
-        ];
+      let d1=[];
+      let d2=[];
 
-        // data of steps 
+      //Choosing algorithm from Select and pushing steps into arrays of data
 
-        let d1=[];
-        let d2=[];
+      for(let i=0;i<sizes.length;i++){
+            let data = generateNumbers(sizes[i]);
+            let fv = document.getElementById("firstAlgo").value;
+            let sv = document.getElementById("secondAlgo").value;
 
-        //Choosing algorithm from Select and pushing steps into arrays of data
-
-        for(let i=0;i<sizes.length;i++){
-                let data = generateNumbers(sizes[i]);
-                let fv = document.getElementById("firstAlgo").value;
-                let sv = document.getElementById("secondAlgo").value;
-
-                if(fv != "none" && sv != "none"){
-                    if(fv==sv){
-                        let temp = selector(data,fv);
-                        d1.push(temp);
-                        d2.push(temp);
-                    }
-                    else{
-                        d1.push(selector(data,fv));
-                        d2.push(selector(data,sv));
-                    }
-                    //Compare Between Each Other;
-
-                }else if(fv != "none"){
-                    //First Only
+            if(fv != "none" && sv != "none"){
+                if(fv==sv){
+                    let temp = selector(data,fv);
+                    d1.push(temp);
+                    d2.push(temp);
+                }
+                else{
                     d1.push(selector(data,fv));
-                }else{
-                    //Second Only
                     d2.push(selector(data,sv));
                 }
-                
-        }
-    /*  draw( data 1 , data 2 , lable 1 , lable 2 )      */
-        draw(d1,d2,"First Algorithm","Second Algorithm");
+                //Compare Between Each Other;
+
+            }else if(fv != "none"){
+                //First Only
+                d1.push(selector(data,fv));
+            }else{
+                //Second Only
+                d2.push(selector(data,sv));
+            }
+            
+      }
+/*  draw( data 1 , data 2 , lable 1 , lable 2 )      */
+    draw(d1,d2,"First Algorithm","Second Algorithm");
 
 
-    }
-
+}
 
 //excuting graphs
 
