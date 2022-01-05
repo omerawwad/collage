@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+select{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px;
+    width: 25vw;
+    border: none;
+    background-color: rgba(0, 0, 0, .01);
+}
+
+#body{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+}
+
+
+#upper{
+    flex-direction: row;
+    display: flex;
+    flex-grow: 1;
+}
+
+#mid{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+h1{
+    color: black ;
+    font-family: 'Courier New', Courier, monospace;
+    padding-bottom: 0%;
+    animation-name: colorfade;
+    animation-duration: 4s;
+  }
+  
+  @keyframes colorfade {
+    from {color: lightblue;}
+    to {color: black;}
+  }
+
+#lower{
+    flex-grow: 1;
+}
+
+
+button {
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 25vw;
+}
+
+button:hover {
+  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+/*
+button:focus {
+   background-color: rgba(0, 0, 0, 0.8);
+   animation-name: colorfade2;
+    animation-duration: 4s;
+    
+  }
+  
+  @keyframes colorfade2 {
+    from {background-color: rgba(0, 0, 0, 0.82);}
+    to {background-color: rgba(0, 0, 0, 0.8);}
+  }
+  */  
+
+@media (min-width: 768px) {
+  .button-37 {
+    padding: 10px 30px;
+  }
+}
